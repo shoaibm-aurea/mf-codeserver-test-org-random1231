@@ -7,7 +7,7 @@ async function main() {
   console.log(branches);
 
   await git.branch(['-a']);
-  await git.raw(['-a']);
+  await git.raw(['-a1']);
 }
 
 main();
