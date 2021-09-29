@@ -1,6 +1,7 @@
 import requests
 import json
-token = "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"
+import os
+token = os.getenv('GITHUB_TOKEN')
 
 headers = {
     "Authorization" : "token {}".format(token),
