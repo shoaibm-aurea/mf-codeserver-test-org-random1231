@@ -1,0 +1,26 @@
+{
+  "name": "mf-codeserver-test-org-random1231",
+  "version": "1.0.0",
+  "description": "testing",
+  "main": "index.ts",
+  "scripts": {
+    "test": "ts-node index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shoaibm-aurea/mf-codeserver-test-org-random1231.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shoaibm-aurea/mf-codeserver-test-org-random1231/issues"
+  },
+  "homepage": "https://github.com/shoaibm-aurea/mf-codeserver-test-org-random1231#readme",
+  "devDependencies": {
+    "@types/node": "^16.10.1",
+    "ts-node": "^10.2.1"
+  },
+  "dependencies": {
+    "simple-git": "^2.45.1"
+  }
+}
