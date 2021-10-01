@@ -117,7 +117,8 @@ def create_pull_request(branch_name):
         "base": "master"
     }
     response = requests.post(url, data=json.dumps(data), headers=headers)
-    print(response.json()['url'])
+    return response.json()['url']
+
 
 
 if __name__ == '__main__':
@@ -125,7 +126,6 @@ if __name__ == '__main__':
     default_branch_sha = get_default_branch_head()
     tree_sha = create_tree(blob_sha, default_branch_sha)
     commit_sha = create_commit(tree_sha, default_branch_sha)
-    # default_branch_sha = get_default_branch_head()
     branch_name = create_branch(commit_sha)
     create_pull_request(branch_name)
 
