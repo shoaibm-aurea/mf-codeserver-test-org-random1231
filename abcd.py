@@ -120,15 +120,12 @@ def create_pull_request(branch_name):
     return response.json()['url']
 
 
+
 if __name__ == '__main__':
     blob_sha = create_blob()
     default_branch_sha = get_default_branch_head()
     tree_sha = create_tree(blob_sha, default_branch_sha)
     commit_sha = create_commit(tree_sha, default_branch_sha)
     branch_name = create_branch(commit_sha)
-    pr_url = create_pull_request(branch_name)
-    print(pr_url)
-
-
-    # for adding multiple commits, parent commit should be equal to the last commit sha
+    create_pull_request(branch_name)
 
